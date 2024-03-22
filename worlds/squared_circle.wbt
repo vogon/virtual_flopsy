@@ -1,0 +1,40 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "../protos/flopsy.proto"
+
+WorldInfo {
+  contactProperties [
+    ContactProperties {
+      material1 "drivingWheel"
+      material2 "default"
+      coulombFriction 1
+    }
+    ContactProperties {
+      material1 "freeWheel"
+      material2 "default"
+      coulombFriction 0.3
+    }
+  ]
+  basicTimeStep 5
+}
+Viewpoint {
+  orientation 0.3085966434418502 0.0699901816687245 -0.9486145087054079 3.1452483340291466
+  position 0.4246893122875888 -0.10131589860036735 0.7879623450757786
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation -0.593867 -0.131728 2.22045e-16
+  floorSize 1.2192 1.2192
+  floorTileSize 0.3048 0.3048
+}
+flopsy {
+}
+target {
+  translation -0.2 0.3 0
+}
